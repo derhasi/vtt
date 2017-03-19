@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World!</title>
+  <style>
+    video, canvas {
+      margin-left: 100px;
+      margin-top: 35px;
+      position: absolute;
+    }
+  </style>
 </head>
 <body>
 <h1>Hello World!</h1>
@@ -10,10 +17,17 @@
 We are using Node.js <script>document.write(process.versions.node)</script>,
 Chromium <script>document.write(process.versions.chrome)</script>,
 and Electron <script>document.write(process.versions.electron)</script>.
+
+<div>
+  <video id="video" width="600" height="450" preload autoplay loop muted controls></video>
+  <canvas id="canvas" width="600" height="450"></canvas>
+</div>
+
 </body>
 
 <script>
   // You can also require other files to run in this process
+  require('./node_modules/tracking/build/tracking.js');
   require('./renderer.js')
 </script>
 </html>
