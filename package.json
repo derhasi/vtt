@@ -1,0 +1,10 @@
+{
+  "name": "video-time-tracking",
+  "version": "1.0.0",
+  "description": "A small app for tracking time via markers on a video signal",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "tracking": "^1.1.3"
+  }
+}
